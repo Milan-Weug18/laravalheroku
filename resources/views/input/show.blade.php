@@ -62,10 +62,10 @@
         </div>
 
         <div class="card-header">
-            <form class="form-inline float-right" action="#" method="POST">
+            <form class="form-inline float-right" action="/input/{{ $input->id }}" method="POST">
                         @method('DELETE')
                         @csrf
-            <button type="submit" class="btn btn-success">Bevestigen</button>
+            <button type="submit" class="btn btn-sm btn-warning">Bevestigen</button>
             </form>
 
 

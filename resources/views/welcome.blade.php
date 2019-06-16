@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Applicatie van Vincent Roeland
                 </div>
 
                 <div class="links">

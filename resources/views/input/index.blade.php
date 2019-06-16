@@ -34,10 +34,10 @@
 <div class="container">
 
    <div class="card" style="margin-top: 20px;">
-    <a href="{{route('input.create') }}">Maak Assignment aan</a>
-  <hr>
             <div class="card-body">
               <h3>Assignments</h3>
+              <hr>
+               <a href="{{route('input.create') }}">Maak Assignment</a>
               <div class="card">
       <div class="card-header">
 

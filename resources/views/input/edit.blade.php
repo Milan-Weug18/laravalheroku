@@ -41,7 +41,7 @@
               <div class="card">
      <div class="card-header">
       
-    <form method="POST" action="/input/{{ $input->id }}">
+    <form method="POST" action="{{route('input.update', $input->id)}}">
 
           @method('PATCH')
 
@@ -63,7 +63,7 @@
               <label for="price">Beschrijving</label>
               <input type="text" class="form-control" name="description" value="{{$input->description}}" />
           </div>
-          <button type="submit" class="btn btn-primary">Wijzigen</button>
+          <button type="submit" class="btn btn-primary float-right">Wijzigen</button>
       </form>
 
 

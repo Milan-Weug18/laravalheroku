@@ -80,9 +80,12 @@ class InputController extends Controller
      * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Input $input)
+    public function update(InputRequest $request, Input $input)
     {
-        //
+        $request->validated();
+        $input->update($request->all());
+
+        return view('input.show', compact('input'));
     }
 
     /**

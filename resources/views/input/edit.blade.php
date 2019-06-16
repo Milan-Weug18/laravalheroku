@@ -41,7 +41,22 @@
               <div class="card">
      <div class="card-header">
       
-                {{$input->firstname}}
+    <form method="POST" action="/input/{{ $input->id }}">
+
+          @method('PATCH')
+
+
+          <div class="form-group">
+              @csrf
+              <label for="name">Voornaam</label>
+              <input type="text" class="form-control" name="firstname" value="$input->firstname" />
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+
+
+
 
         </div>
       </div>

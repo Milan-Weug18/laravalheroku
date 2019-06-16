@@ -77,14 +77,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modal_label">Weet je zeker dat je @yield('delete_text') wilt verwijderen?</h5>
+                    <h5 class="modal-title" id="modal_label">Weet je zeker dat je {{$input->firstname}} wilt verwijderen?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Sluiten">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
-                    <form class="form-inline float-right" action="@yield('delete_link')" method="POST">
+                    <form class="form-inline float-right" action="{{ route('input.destroy') }}" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-success">Bevestigen</button>

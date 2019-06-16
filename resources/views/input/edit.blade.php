@@ -42,7 +42,7 @@
      <div class="card-header">
       
                 {{$input->id}}
-                {{$input->Firstname}}
+                {{$input->firstname}}
         </div>
       </div>
     </div>

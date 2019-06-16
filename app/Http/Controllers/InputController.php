@@ -64,7 +64,7 @@ class InputController extends Controller
      */
     public function edit($id)
     {
-        $input = Input::find($id);
+        $input = Input::All($id);
         //$input = Input::all();
 
         return view ('input.edit', compact('input'));

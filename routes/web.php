@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/input', function () {
-    return view('input');
+Route::get('/', function () {
+    return view('welcome');
 });
 
 

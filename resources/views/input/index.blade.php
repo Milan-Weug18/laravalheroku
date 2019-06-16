@@ -24,13 +24,13 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/input">Assignments</a>
-        <a href="{{route('input.create') }}">Maak Assignment aan</a>
       </li>
     </ul>
   </div>
 </nav>
 
-
+<a href="{{route('input.create') }}">Maak Assignment aan</a>
+<hr>
 
 
 <div class="container">

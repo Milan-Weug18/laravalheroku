@@ -65,7 +65,7 @@ class InputController extends Controller
     public function edit($id)
     {
         $test = Input::find($id);
-        $input = Input::all($id);
+        dd($test);
 
 
         //$input = Input::all();

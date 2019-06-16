@@ -69,7 +69,7 @@
             </form>
 
 
-            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="#"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
+            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="{{ route('input.edit') }}"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
         </div>
       </div>
     </div>

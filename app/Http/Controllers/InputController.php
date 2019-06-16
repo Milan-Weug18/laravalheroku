@@ -53,7 +53,6 @@ class InputController extends Controller
      */
     public function show(Input $input)
     {
-        dd($input);
         return view('input.show', compact('input'));
     }
 

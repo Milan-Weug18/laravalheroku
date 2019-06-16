@@ -65,7 +65,7 @@
             <form class="form-inline float-right" action="/input/{{ $input->id }}" method="POST">
                         @method('DELETE')
                         @csrf
-            <button type="submit" class="btn btn-sm btn-warning">Bevestigen</button>
+            <button type="submit" class="btn btn-sm btn-danger">Verwijderen</button>
             </form>
 
 

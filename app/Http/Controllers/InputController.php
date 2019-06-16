@@ -66,6 +66,7 @@ class InputController extends Controller
     {
         // $inputs = Assignment::all($id);
         $input = Input::all();
+        dd($input);
 
         return view ('input.edit', compact('input'));
     }

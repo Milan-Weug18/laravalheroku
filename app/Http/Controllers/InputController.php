@@ -88,9 +88,9 @@ class InputController extends Controller
      * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Input $input)
+    public function destroy($id)
     {
-        $input::query()->findOrFail($input)->first()->delete();
+       Input::find($id)->delete();
         return redirect('/input');
     }
 }

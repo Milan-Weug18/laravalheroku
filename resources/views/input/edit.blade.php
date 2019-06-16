@@ -49,10 +49,21 @@
           <div class="form-group">
               @csrf
               <label for="name">Voornaam</label>
-              <input type="text" class="form-control" name="firstname" value="$input->firstname" />
+              <input type="text" class="form-control" name="firstname" value="{{$input->firstname}}" />
           </div>
-          
-          <button type="submit" class="btn btn-primary">Add</button>
+          <div class="form-group">
+              <label for="price">Achternaam</label>
+              <input type="text" class="form-control" name="lastname" value="{{$input->lastname}}" />
+          </div>
+          <div class="form-group">
+              <label for="price">Titel</label>
+              <input type="text" class="form-control" name="title" value="{{$input->title}}" />
+          </div>
+          <div class="form-group">
+              <label for="price">Beschrijving</label>
+              <input type="text" class="form-control" name="description" value="{{$input->description}}" />
+          </div>
+          <button type="submit" class="btn btn-primary">Wijzigen</button>
       </form>
 
 

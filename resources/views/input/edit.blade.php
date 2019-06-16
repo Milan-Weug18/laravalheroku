@@ -41,30 +41,7 @@
               <div class="card">
      <div class="card-header">
       
-      <form method="POST" action="/input/{{ $input->id }}">
 
-      @method('PATCH')
-
-
-              <div class="form-group">
-                  @csrf
-                  <label for="name">Voornaam</label>
-                  <input type="text" class="form-control" name="firstname" value="$input->firstname" />
-              </div>
-              <div class="form-group">
-                  <label for="price">Achternaam</label>
-                  <input type="text" class="form-control" name="lastname" value="$input->lastname" />
-              </div>
-              <div class="form-group">
-                  <label for="quantity">Titel</label>
-                  <input type="text" class="form-control" name="title" value="$input->title" />
-              </div>
-              <div class="form-group">
-                  <label for="quantity">Beschrijving</label>
-                  <input type="text" class="form-control" name="description" value="$input->description" />
-              </div>
-              <button type="submit" class="btn btn-primary">Add</button>
-          </form>
         </div>
       </div>
     </div>

@@ -57,6 +57,7 @@
                 <h6 class="font-weight-bolder">Description</h6>
                 {{$input->description}}
             </div>
+            {{$input->id}}
             </div>
           </div>
         </div>

@@ -61,7 +61,7 @@
           </div>
         </div>
 
-         <button class="btn btn-warning float-right" href="{{route('input.destroy'}}">Verwijderen</button>
+         <button class="btn btn-warning float-right" href="{{route('input.destroy')}}">Verwijderen</button>
          <button class="btn btn-primary float-right" href="{{route('input.edit', $inputs->id) }}">Wijzigen</button>
 
       </div>

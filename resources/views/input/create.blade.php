@@ -23,7 +23,7 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Assignment</a>
+        <a class="nav-link" href="/input">Assignment</a>
     </ul>
   </div>
 </nav>

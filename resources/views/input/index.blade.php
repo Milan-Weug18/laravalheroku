@@ -23,7 +23,8 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Assignments</a>
+        <a class="nav-link" href="/input">Assignments</a>
+        <a href="{{route('input.create') }}">Maak Assignment aan</a>
       </li>
     </ul>
   </div>
@@ -33,8 +34,6 @@
 
 
 <div class="container">
-  
-  <a href="{{route('input.create') }}">Maak Assignment aan</a>
 
    <div class="card" style="margin-top: 20px;">
             <div class="card-body">
@@ -59,7 +58,7 @@
                     <th scope="row">{{ $inputs->id }}</th>
                     <td>{{ $inputs->firstname }}</td>
                     <td>{{ $inputs->lastname }}</td>
-                    <td>{{ $inputs->tile }}</td>
+                    <td>{{ $inputs->title }}</td>
                     <td><a class="btn btn-primary" href="{{route('input.show', $inputs->id) }}">Details</a></td>
                   </tr>
                   @endforeach

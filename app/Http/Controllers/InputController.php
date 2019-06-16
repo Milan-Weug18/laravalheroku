@@ -53,7 +53,8 @@ class InputController extends Controller
      */
     public function show(Input $input)
     {
-        //
+        dd($input);
+        return view('input.show', compact('input'));
     }
 
     /**
@@ -64,7 +65,10 @@ class InputController extends Controller
      */
     public function edit(Input $input)
     {
-        //
+        // $inputs = Assignment::all($id);
+        $input = Input::all();
+
+        return view ('input.edit', compact('input'));
     }
 
     /**

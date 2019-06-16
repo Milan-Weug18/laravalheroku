@@ -64,10 +64,10 @@ class InputController extends Controller
      */
     public function edit($id)
     {
-        $input = Input::all($id);
+        //$input = Input::all($id);
         //$input = Input::all();
 
-        return view ('input.edit', compact('input'));
+        return $id;
     }
 
     /**

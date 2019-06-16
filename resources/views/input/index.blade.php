@@ -39,8 +39,8 @@
 
 
 <div class="container">
-	
-	<a href="{{route('input.create') }}">Testing</a>
+  
+  <a href="{{route('input.create') }}">Testing</a>
 
 </div>
 

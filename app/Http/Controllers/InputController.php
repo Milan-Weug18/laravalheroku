@@ -62,11 +62,10 @@ class InputController extends Controller
      * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function edit(Input $input)
+    public function edit($id)
     {
-        // $inputs = Assignment::all($id);
-        $input = Input::all();
-        dd($input);
+        $input = Input::all($id);
+        //$input = Input::all();
 
         return view ('input.edit', compact('input'));
     }

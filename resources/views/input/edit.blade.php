@@ -41,8 +41,8 @@
               <div class="card">
      <div class="card-header">
       
-                {{$input->id}}
-              
+                
+
         </div>
       </div>
     </div>

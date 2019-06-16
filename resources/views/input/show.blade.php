@@ -68,17 +68,9 @@
             <button type="submit" class="btn btn-success">Bevestigen</button>
             </form>
 
-            
-            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="{{route('input.edit'}}"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
+
+            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="#"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
         </div>
-
-
-<form class="form-inline float-right" action="#" method="POST">
-                        @method('DELETE')
-                        @csrf
-<button type="submit" class="btn btn-success">Bevestigen</button>
-</form>
-
       </div>
     </div>
   </div>

@@ -84,7 +84,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
-                    <form class="form-inline float-right" action="{{ route('input.destroy') }}" method="POST">
+                    <form class="form-inline float-right" action="#" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-success">Bevestigen</button>

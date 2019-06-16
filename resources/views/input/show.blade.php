@@ -39,7 +39,7 @@
             <div class="card-body">
               <h3>Show Assignment</h3>
               <div class="card">
-     <div class="card-header">
+      <div class="card-header">
         <div class="d-flex">
         {{--Column 1--}}
         <div class="flex-fill">
@@ -47,19 +47,23 @@
                 <h5>Assignment Details</h5>
                 <h6 class="font-weight-bolder">Voornaam</h6>
                 {{$input->firstname}}
-
+                <hr>
                 <h6 class="font-weight-bolder mt-3">Achternaam</h6>
                 <a href="{{url('/input')}}/{{$input->lastname}}">{{$input->lastname}}</a>
-
+                <hr>
                 <h6 class="font-weight-bolder">Titel</h6>
                 <a href="{{url('/input')}}/{{$input->title}}">{{$input->title}}</a>
-
+                <hr>
                 <h6 class="font-weight-bolder">Description</h6>
-                <a href="{{url('/input')}}/{{$input->Description}}">{{$input->description}}</a>
+                {{$input->description}}
             </div>
             </div>
           </div>
         </div>
+
+         <button class="btn btn-warning float-right" href="{{route('input.destroy'}}">Verwijderen</button>
+         <button class="btn btn-primary float-right" href="{{route('input.edit', $inputs->id) }}">Wijzigen</button>
+
       </div>
     </div>
   </div>

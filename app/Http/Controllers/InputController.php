@@ -90,6 +90,7 @@ class InputController extends Controller
      */
     public function destroy(Input $input)
     {
-        //
+        $input::query()->findOrFail($input)->first()->delete();
+        return redirect('/input');
     }
 }

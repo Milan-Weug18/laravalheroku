@@ -47,29 +47,21 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Firstname</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Lastname</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Details</th>
                   </tr>
                 </thead>
                 <tbody>
+                 @foreach ($input as $inputs)
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">{{$inputs-id}}</th>
+                    <td>{{$inputs-firstname}}</td>
+                    <td>{{$inputs-lastname}}</td>
+                    <td>{{$inputs-tile}}</td>
+                    <td><a class="btn btn-primary" href="{{route('input.show', $input->id)}}">Details</a></td>
                   </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+                  @endforeach
                 </tbody>
               </table>
         </div>

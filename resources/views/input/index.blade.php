@@ -53,8 +53,8 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <p>{{$input->id}}</p>
-                <!--  @foreach ($input as $inputs)
+                  
+                 @foreach ($input as $inputs)
                   <tr>
                     <th scope="row">{{$inputs->id}}</th>
                     <td>{{$inputs->firstname}}</td>
@@ -62,7 +62,7 @@
                     <td>{{$inputs->tile}}</td>
                     <td><a class="btn btn-primary" href="{{route('input.show', $inputs->id)}}">Details</a></td>
                   </tr>
-                  @endforeach -->
+                  @endforeach
                 </tbody>
               </table>
         </div>

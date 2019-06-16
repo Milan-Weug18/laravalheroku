@@ -41,7 +41,7 @@
               <div class="card">
      <div class="card-header">
       
-                
+                {{$input->firstname}}
 
         </div>
       </div>

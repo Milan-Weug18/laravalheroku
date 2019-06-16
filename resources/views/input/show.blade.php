@@ -63,7 +63,7 @@
 
         <div class="card-header">
             <button class="btn btn-sm btn-danger float-right font-weight-bolder" type="submit" data-toggle="modal" data-target="#confirm_modal" tabindex="2"><i class="fas fa-trash"></i>Assignment verwijderen</button>
-            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="{{route('input.edit', $input->id) }}"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
+            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="{{route('input.edit'}}"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
         </div>
 
 

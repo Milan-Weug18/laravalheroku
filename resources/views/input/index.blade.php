@@ -59,7 +59,7 @@
                     <td>{{$inputs-firstname}}</td>
                     <td>{{$inputs-lastname}}</td>
                     <td>{{$inputs-tile}}</td>
-                    <td><a class="btn btn-primary" href="{{route('input.show', $input->id)}}">Details</a></td>
+                    <td><a class="btn btn-primary" href="{{route('input.show', $inputs->id)}}">Details</a></td>
                   </tr>
                   @endforeach
                 </tbody>

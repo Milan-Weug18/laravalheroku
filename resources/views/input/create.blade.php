@@ -6,7 +6,7 @@
 
         <title>@yield('title', 'MyPortfolio Site')</title>
 
-        <link rel="stylesheet" type="text/css" href="https://gentle-stream-86560.herokuapp.com/css/app.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     </head>
     
 

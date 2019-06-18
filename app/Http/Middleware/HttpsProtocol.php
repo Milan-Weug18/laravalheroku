@@ -20,12 +20,13 @@ class HttpsProtocol
 
         
 
-        if (!$request->secure() && env('APP_ENV') === 'production') {
+        // if(!$request->secure() && env('APP_ENV') === 'production') {
 
-            URL::forceSchema('https');
-            return $next($request); 
-        }
-            return redirect('/home');
+        //     return redirect()->secure($request->getRequestUri());
+
+        // }
+
+        return $next($request);  
 
             
         }

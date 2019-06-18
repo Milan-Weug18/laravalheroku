@@ -18,7 +18,7 @@ class HttpsProtocol
     {
         
 
-        $t = $request->secure
+        $t = $request->secure();
         dd($t);
 
         if (!$request->secure() && env('APP_ENV') === 'production') {

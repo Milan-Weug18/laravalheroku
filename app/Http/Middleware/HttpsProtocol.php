@@ -17,9 +17,13 @@ class HttpsProtocol
     public function handle($request, Closure $next)
     {
         
-         if ($request->secure() && env('APP_ENV') === 'production') {
 
-            URL::forceSchema('http');
+        $t = $request->secure
+        dd($t);
+
+        if (!$request->secure() && env('APP_ENV') === 'production') {
+
+            URL::forceSchema('https');
             return $next($request); 
         }
             return redirect()->secure($request->getRequestUri());

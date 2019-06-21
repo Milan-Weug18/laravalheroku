@@ -25,6 +25,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/input">Assignment</a>
     </ul>
+     <li class="nav-item">
+        <a class="nav-link float-right" href="/admin">Admin</a>
+      </li>
   </div>
 </nav>
 

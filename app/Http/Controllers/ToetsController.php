@@ -16,7 +16,7 @@ class ToetsController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('canAny:seeAanmeldingen', ['only' => 'index']);
+        $this->middleware('admin');
         }
 
     public function index()

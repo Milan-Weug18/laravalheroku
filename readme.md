@@ -10,3 +10,14 @@ Binnen deze Readme.md benadruk is mijn keuze in de gekozen autenticatie & autori
 
 Automaties bij het aanmaken van een nieuwe gebruiker wordt er een Employee rol toegepast bij voor deze persoon. Alleen een manager of ontwikkelaar heeft de mogelijkheid om dit aan te kunnen passen binnen een database.
 
+
+
+## Technische Onderbouwing ##
+
+
+## 1. Door gebruik te maken van autenticatie is het belangrijk de standaard package te installeren wat Laravel zelf heeft ontwikkeld. Deze commando moet in de Laravel folder uitgevoerd worden, als admin in de Terminal. "php artisan make:auth"
+Door deze configuratie worden er automatisch tabellen aangemaakt en ingesteld. 
+
+## 2. Vervolgens heb ik een middleware group voor de autenticatie binnen mijn web.php(routes) gemaakt. Vanuit hier heb ik de controllers toegevoegd, waarbij er ingelogd moet zijn om de pagina te mogen benaderen Anders wordt de gebruiker naar de login-pagina gestuurd.
+
+

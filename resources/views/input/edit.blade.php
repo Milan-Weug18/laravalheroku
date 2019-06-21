@@ -26,7 +26,7 @@
         <a class="nav-link" href="/input">Assignments</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link float-right" href="/admin">Admin</a>
+        <a class="nav-link float-right" href="/toets">Toets</a>
       </li>
     </ul>
   </div>

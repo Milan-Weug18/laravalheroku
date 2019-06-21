@@ -25,7 +25,7 @@
       <li class="nav-item">
         <a class="nav-link" href="/input">Assignments</a>
       </li>
-       <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link float-right" href="/toets">Toets</a>
       </li>
     </ul>
@@ -33,52 +33,45 @@
 </nav>
 
 
-
-
 <div class="container">
 
-
-    <div class="card" style="margin-top: 20px;">
+   <div class="card" style="margin-top: 20px;">
             <div class="card-body">
-              <h3>Show Assignment</h3>
+              <h3>Assignments</h3>
+              <hr>
+               <a href="{{route('input.create') }}">Maak Toets </a>
               <div class="card">
       <div class="card-header">
-        <div class="d-flex">
-        {{--Column 1--}}
-        <div class="flex-fill">
-            <div class="d-flex flex-column mb-3">
-                <h5>Assignment Details</h5>
-                <h6 class="font-weight-bolder">Voornaam</h6>
-                {{$input->firstname}}
-                <hr>
-                <h6 class="font-weight-bolder mt-3">Achternaam</h6>
-                <a href="{{url('/input')}}/{{$input->lastname}}">{{$input->lastname}}</a>
-                <hr>
-                <h6 class="font-weight-bolder">Titel</h6>
-                <a href="{{url('/input')}}/{{$input->title}}">{{$input->title}}</a>
-                <hr>
-                <h6 class="font-weight-bolder">Description</h6>
-                {{$input->description}}
-            </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="card-header">
-            <form class="form-inline float-right" action="/input/{{ $input->id }}" method="POST">
-                        @method('DELETE')
-                        @csrf
-            <button type="submit" class="btn btn-sm btn-danger">Verwijderen</button>
-            </form>
-
-
-            <a class="btn btn-sm btn-info float-right mr-2 text-white font-weight-bolder" href="{{route('input.edit', $input->id) }}"><i class="fas fa-pen" tabindex="1"></i>Bewerken</a>
+                    <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Voornaam</th>
+                    <th scope="col">Achternaam</th>
+                    <th scope="col">Rol</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                <!--  @foreach ($input as $inputs)
+                  <tr>
+                    <th scope="row">{{ $inputs->id }}</th>
+                    <td>{{ $inputs->firstname }}</td>
+                    <td>{{ $inputs->lastname }}</td>
+                    <td>{{ $inputs->title }}</td>
+                    <td><a class="btn btn-primary" href="{{route('input.show', $inputs->id) }}">Details</a></td>
+                  </tr>
+                  @endforeach -->
+                </tbody>
+              </table>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+</div>
 
 
 

@@ -20,6 +20,9 @@ Route::Group(['middleware' => ['auth']], function() {
 
 	Route::resource('input','InputController');
 
+	Route::resource('toets','ToetsController');
+
+
 });
 
 

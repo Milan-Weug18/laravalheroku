@@ -12,6 +12,13 @@ class ToetsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('canAny:seeAanmeldingen', ['only' => 'index']);
+        }
+
     public function index()
     {
         return view('toets.index');

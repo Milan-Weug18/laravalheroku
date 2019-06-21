@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title', 'MyPortfolio Site')</title>
+        <title>@yield('title', 'Toetsing')</title>
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     </head>
@@ -39,7 +39,7 @@
             <div class="card-body">
               <h3>Assignments</h3>
               <hr>
-               <a href="{{route('input.create') }}">Maak Toets </a>
+               <a href="{{route('toets.create') }}">Maak Toets </a>
               <div class="card">
       <div class="card-header">
 

@@ -37,7 +37,7 @@
 
    <div class="card" style="margin-top: 20px;">
             <div class="card-body">
-              <h3>Assignments</h3>
+              <h3>Toets</h3>
               <hr>
                <a href="{{route('toets.create') }}">Maak Toets </a>
               <div class="card">
@@ -46,9 +46,10 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Voornaam</th>
-                    <th scope="col">Achternaam</th>
-                    <th scope="col">Rol</th>
+                    <th scope="col">Docent</th>
+                    <th scope="col">Vak</th>
+                    <th scope="col">Tijd</th>
+                    <th scope="col">Beschrijving</th>
                   </tr>
                 </thead>
                 <tbody>

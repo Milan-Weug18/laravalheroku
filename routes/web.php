@@ -22,7 +22,7 @@ Route::resource('input','InputController');
 Route::Group(['middleware' => ['auth']], function() {
 
 
-	Route::resource('toets','ToetsController');
+	Route::resource('toets','ToetsController')->middleware('admin');
 
 
 });

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Toets;
 use Illuminate\Http\Request;
 use App\Http\Middleware\Auth;
+use App\Http\Middleware\Authenticate;
 
 class ToetsController extends Controller
 {
@@ -20,7 +21,7 @@ class ToetsController extends Controller
     }
 
 
-    
+
 
     public function index()
     {

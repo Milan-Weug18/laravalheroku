@@ -7,7 +7,7 @@
             <div class="card-body">
               <h3>Toets</h3>
               <hr>
-               <a href="{{route('toets.create') }}">Maak Toets </a>
+               <a href="{{route('toets.create') }}">Toets maken</a>
               <div class="card">
       <div class="card-header">
       

@@ -35,7 +35,7 @@ class ToetsController extends Controller
     public function create()
     {
         $toets = Toets::all();
-        return view('toets.index');
+        return view('toets.create');
     }
 
     /**

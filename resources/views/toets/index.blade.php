@@ -42,7 +42,6 @@
                <a href="{{route('toets.create') }}">Maak Toets </a>
               <div class="card">
       <div class="card-header">
-
                     <table class="table">
                 <thead>
                   <tr>

@@ -86,6 +86,8 @@
 
                 <div class="links">
                     <a href="/input">Assignments</a>
+
+                     <a href="/toets">Toets</a>
                     
                 </div>
             </div>

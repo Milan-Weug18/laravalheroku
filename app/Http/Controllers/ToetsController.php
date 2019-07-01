@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Toets;
 use Illuminate\Http\Request;
+use App\Http\Middleware\Auth;
 
 class ToetsController extends Controller
 {
@@ -15,9 +16,11 @@ class ToetsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
         $this->middleware('admin');
-        }
+    }
+
+
+    
 
     public function index()
     {

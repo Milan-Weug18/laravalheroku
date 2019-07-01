@@ -21,7 +21,6 @@ class CheckAdmin
         if($userRoles->contains('Admin')){
              return $next($request);
         }
-        dd("ezel");
         return redirect('/home');
     }
 }

@@ -81,8 +81,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Applicatie van Vincent Roeland
+                    Heroku & Innovation
                 </div>
+
+                <div class="flex-center"><h4>Vincent Roeland</h4></div>
 
                 <div class="links">
                     <a href="/input">Assignments</a>

@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Heroku & Innovation
+                    Heroku & Security
                 </div>
 
                 <div class="flex-center"><h4>Vincent Roeland</h4></div>

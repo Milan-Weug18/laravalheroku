@@ -30,5 +30,12 @@ Door deze configuratie worden er automatisch tabellen aangemaakt en ingesteld. V
 
 ## 1. Benader de volgende site (https://gentle-stream-86560.herokuapp.com), of draai dit project lokaal. ('php artisan serve').
 
-## 2. Probeer zonder in te loggen naar de Toets pagina te benaderen, wat niet lukt. 
+## 2. Probeer zonder in te loggen naar de Toets pagina te benaderen, wat je zal laten moeten inloggen.
+
+## 3. Log in met het useraccount(default) : user@example.com (wachtwoord: 'secret'), probeer vervolgens weer de toets pagina te benaderen. Je zult zien dat dit niet mogelijk is. 
+
+## 4. Log uit met deze gebruiker en probeer het manageraccount(admin) : manager@example.com (wachtwoord: 'secret').
+Je zult zien dat de Toets pagina nu wel te bereiken is. Hierdoor scherm je dus de juiste gebruikers af om deze pagina niet te mogen benaderen.
+
+
 

@@ -44,6 +44,14 @@ class UserTableSeeder extends Seeder
 
 
     $company->roles()->attach($company);
+
+
+    //     $users = User::all();
+
+    //     foreach ($users as $user) {
+    //         $user->roles()->attach($role_employee);
+    //     }
+
     }
 
 

@@ -17,10 +17,11 @@ Route::get('/', function () {
 });
 
 
-Route::resource('input','InputController');
+
 
 Route::Group(['middleware' => ['auth']], function() {
 
+	Route::resource('input','InputController');
 
 	Route::resource('toets','ToetsController')->middleware('admin');
 

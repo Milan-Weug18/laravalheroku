@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Toets;
 use Illuminate\Http\Request;
+use App\Http\Requests\ToetsRequest;
 
 class ToetsController extends Controller
 {
@@ -24,7 +25,8 @@ class ToetsController extends Controller
 
     public function index()
     {
-        return view('toets.index');
+        $toets = Toets::All();
+        return view('toets.index', compact('toets'));
     }
 
     /**
@@ -44,9 +46,11 @@ class ToetsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ToetsRequest $request)
     {
-        //
+        $request->validated();
+        Toets::query()->create($request->all());
+        return redirect('/toets');
     }
 
     /**
@@ -91,6 +95,7 @@ class ToetsController extends Controller
      */
     public function destroy(Toets $toets)
     {
-        //
+        Toets::find($id)->delete();
+        return redirect('/toets');
     }
 }

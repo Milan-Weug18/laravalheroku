@@ -81,15 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Heroku & Security
+                    Framework Development
                 </div>
 
-                <div class="flex-center"><h4>Vincent Roeland</h4></div>
+                <div class="flex-center"><h4>Milan Weug</h4></div>
 
                 <div class="links">
                     <a href="/input">Assignments</a>
 
-                     <a href="/toets">Toets</a>
+                     <a href="/toets">CRUD</a>
                     
                 </div>
             </div>

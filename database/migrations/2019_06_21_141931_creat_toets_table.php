@@ -17,7 +17,7 @@ class CreatToetsTable extends Migration
             $table->increments('id');
             $table->string('docent')->references('firstname')->on('users');
             $table->string('vak');
-            $table->integer('tijd');
+            $table->string('tijd');
             $table->string('description')->nullable();
             $table->timestamps();
             

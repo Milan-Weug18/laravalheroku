@@ -30,4 +30,7 @@ class RoleTableSeeder extends Seeder
     $role_company->description = 'A Company User';
     $role_company->save();
     }
+
+    //Give all users a role
+    
 }

@@ -21,6 +21,6 @@ class CheckAdmin
         if($userRoles->contains('Admin')){
              return $next($request);
         }
-        return redirect('welcome');
+        return redirect('/');
     }
 }

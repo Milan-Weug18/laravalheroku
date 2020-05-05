@@ -49,26 +49,26 @@
 
                 <div class="form-group {{ $errors->has('firstname') ? 'has-error' : '' }}">
                     
-                    <label for="name"><b>Voornaam</b></label>
+                    <label for="name"><b>First Name</b></label>
                     <input type="text" class="form-control" name="firstname" required />
                     <span class="text-danger">{{ $errors->first('firstname') }}</span>
                 </div>
                 <div class="form-group {{ $errors->has('lastname') ? 'has-error' : '' }} ">
-                    <label for="price"><b>Achternaam</b></label>
+                    <label for="price"><b>Last Name</b></label>
                     <input type="text" class="form-control" name="lastname" required  />
                     <span class="text-danger">{{ $errors->first('lastname') }}</span>
                 </div>
                 <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
-                    <label for="quantity"><b>Titel</b></label>
+                    <label for="quantity"><b>Title</b></label>
                     <input type="text" class="form-control" name="title"    required  />
                     <span class="text-danger">{{ $errors->first('title') }}</span>
                 </div>
                 <div class="form-group {{ $errors->has('description') ? 'has-error' : '' }}">
-                    <label for="quantity"><b>Beschrijving</b></label>
+                    <label for="quantity"><b>Description</b></label>
                     <input type="text" class="form-control" name="description" style="height: 100px"; />
                     <span class="text-danger">{{ $errors->first('description') }}</span>
                 </div>
-                <button type="submit" class="btn btn-success float-right">Opslaan</button>
+                <button type="submit" class="btn btn-success float-right">Save</button>
             </form>
 
              </div>

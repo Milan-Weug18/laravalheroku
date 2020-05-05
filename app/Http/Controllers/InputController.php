@@ -17,6 +17,7 @@ class InputController extends Controller
     {
         $input = Input::all();
         return view('input.index', compact('input'));
+
     }
 
     /**

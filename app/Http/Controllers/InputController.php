@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App;
 use App\Input;
 use Illuminate\Http\Request;
 use App\Http\Requests\InputRequest;
@@ -15,6 +16,7 @@ class InputController extends Controller
      */
     public function index()
     {
+        App::abort(500);
         $input = Input::all();
         return view('input.index', compact('input'));
 

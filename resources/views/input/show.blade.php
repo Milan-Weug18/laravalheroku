@@ -48,13 +48,13 @@
         <div class="flex-fill">
             <div class="d-flex flex-column mb-3">
                 <h5>Assignment Details</h5>
-                <h6 class="font-weight-bolder">Voornaam</h6>
+                <h6 class="font-weight-bolder">First Name</h6>
                 {{$input->firstname}}
                 <hr>
-                <h6 class="font-weight-bolder mt-3">Achternaam</h6>
+                <h6 class="font-weight-bolder mt-3">Last Name</h6>
                 <a href="{{url('/input')}}/{{$input->lastname}}">{{$input->lastname}}</a>
                 <hr>
-                <h6 class="font-weight-bolder">Titel</h6>
+                <h6 class="font-weight-bolder">Title</h6>
                 <a href="{{url('/input')}}/{{$input->title}}">{{$input->title}}</a>
                 <hr>
                 <h6 class="font-weight-bolder">Description</h6>
@@ -68,7 +68,7 @@
             <form class="form-inline float-right" action="/input/{{ $input->id }}" method="POST">
                         @method('DELETE')
                         @csrf
-            <button type="submit" class="btn btn-sm btn-danger">Verwijderen</button>
+            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
             </form>
 
 

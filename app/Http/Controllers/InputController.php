@@ -28,6 +28,7 @@ class InputController extends Controller
      */
     public function create()
     {
+        toastr()->info('Je gaat nu een object aanmaken');
         return view('input.create');
     }
 
@@ -39,11 +40,9 @@ class InputController extends Controller
      */
     public function store(InputRequest $request)
     {
-
         $request->validated();
         input::query()->create($request->all());
         return redirect('/input');
-
 
     }
 
@@ -55,6 +54,7 @@ class InputController extends Controller
      */
     public function show(Input $input)
     {
+        toastr()->info('Inspecteren van het object');
         return view('input.show', compact('input'));
     }
 
@@ -66,6 +66,7 @@ class InputController extends Controller
      */
     public function edit($id)
     {
+        toastr()->success('Het object is succesvol bewerkt!');
         $input = Input::find($id);
         //dd($test);
 
@@ -98,7 +99,7 @@ class InputController extends Controller
      */
     public function destroy($id)
     {
-       Input::find($id)->delete();
-        return redirect('/input');
+        Input::find($id)->delete();
+        return redirect('/input')->with('message', 'Data deleted successfully!');
     }
 }

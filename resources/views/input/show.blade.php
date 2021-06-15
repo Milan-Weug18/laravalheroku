@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     </head>
     
-
+@toastr_css
 
 <body style="background: #cfcfcf;">
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -83,6 +83,9 @@
 
 
 </body>
+@jquery
+@toastr_js
+@toastr_render
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

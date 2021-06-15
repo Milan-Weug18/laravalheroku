@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App;
 use App\Toets;
 use Illuminate\Http\Request;
 use App\Http\Requests\ToetsRequest;

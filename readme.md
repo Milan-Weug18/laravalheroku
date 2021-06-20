@@ -1,12 +1,12 @@
 ##############################
 ## Security Innovation 		##
 ## 							##
-## Naam :   Vincent Roeland	##
-## HZ-Mail: roel0071@hz.nl  ##
+## Naam :   Milan Weug  	##
+## HZ-Mail: weug0007@hz.nl  ##
 ##############################
 
 ## Onderbouwing Autenticatie  & Autorisatie ## 
-Binnen deze Readme.md benadruk ik mijn keuze op welke manier ik autenticatie & autorisatie gebruik binnen mijn project. Ik maak gebruik van een automatish geconfigureerd pakket van Laravel zelf, voor authenticatie. Hierdoor moet ik binnen met Laravel folder de volgende code uitvoeren om een log-in systeem te kunnen realiseren. Hierdoor moet een gebruiker zich aanmelden om door te mogen op de applicatie. Hierdoor is het mogelijk om anonieme gebruikers gevoelige content te laten in zien. Binnen deze applicatie heb ik een autorisatie toegepast, waarbij een Toets-panel kan benaderen, behalve als de gebruiker geen 'Admin' recht heeft. Een normale gebruiker heeft onbevoegde rechten om dit te mogen, en wordt terug ge-redirect naar de homepage. Hierdoor is er binnen het Database een extra 'Role' table aangemaakt. Ik heb gekozen tussen een Managar(Admin rol), en een Employee(gebruiker). In de role_user table staat de gekoppelde relatie tussen user en role. De Manager heeft recht om de naar de Toets view te routeren, terwijl een normale gebruiker alleen de Assignments table kan openen.  
+Binnen deze Readme.md benadruk ik mijn keuze op welke manier ik autenticatie & autorisatie gebruik binnen mijn project. Ik maak gebruik van een automatish geconfigureerd pakket van Laravel zelf, voor authenticatie. Hierdoor moet ik binnen met Laravel folder de volgende code uitvoeren om een log-in systeem te kunnen realiseren. Hierdoor moet een gebruiker zich aanmelden om door te mogen op de applicatie. De assignments pagina is bevoegd voor iedereen die een user aanmaakt.  
 
 Automaties bij het aanmaken van een nieuwe gebruiker wordt er een Employee rol toegepast bij voor deze persoon. Alleen een manager of ontwikkelaar heeft de mogelijkheid om dit aan te kunnen passen binnen de database. (role_user)
 
@@ -32,11 +32,11 @@ Door deze configuratie worden er automatisch tabellen aangemaakt en ingesteld. V
 
 ## 2. Probeer zonder in te loggen naar de Assignments/Toets pagina te benaderen, wat je zal laten moeten inloggen.
 
-## 3. Log in met het useraccount(default) : user@example.com (wachtwoord: 'secret'), probeer vervolgens weer de Toets pagina te benaderen. Je zult zien dat dit niet mogelijk is, terwijl assignments wel te benaderen is!
+## 3. Registreer met een willekeurig useraccount, probeer vervolgens weer de Assignments pagina te benaderen. Je zult zien dat dit nu mogelijk is.
 
+(Extra)
+## 4. Tijdens het inloggen krijg je de mogelijkheid om een de checkbox 'remember me' aan te vinken. Dit betekent dat je ingelogd zult blijven, ook wanneer je de pagina een keer afsluit.
 
-## 4. Log uit met deze gebruiker en probeer het manageraccount(admin) : manager@example.com (wachtwoord: 'secret').
-Je zult zien dat de Toets pagina nu wel te bereiken is. Hierdoor scherm je dus de juiste gebruikers af om deze pagina niet te mogen benaderen.
 
 
 

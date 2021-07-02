@@ -28,12 +28,10 @@ Route::Group(['middleware' => ['auth']], function() {
 
 });
 
+Route::get('/contact', 'ContactController@index')->name('contact');
 
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
@@ -42,3 +40,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//URL::forceScheme('https');
